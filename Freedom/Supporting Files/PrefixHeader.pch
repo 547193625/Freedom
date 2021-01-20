@@ -13,6 +13,12 @@
 #import "URLStatic.h"
 #import "LCProgressHUD.h"
 
+// 分类
+#import "UIView+SJFrame.h"
+#import "UILabel+ChangeLineSpaceAndWordSpace.h"
+#import "UITableView+SJRegisterCellClass.h"
+#import "UIView+SJFrame.h"
+#import "NSObject+RadiuView.h"
 
 
 // 第三方库
@@ -24,7 +30,7 @@
 #import "Masonry.h"
 #import "AFNetworking.h"
 #import "SDWebImage/UIImageView+WebCache.h"
-
+#import "UINavigationController+FDFullscreenPopGesture.h"
 
 
 

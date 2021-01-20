@@ -49,11 +49,10 @@
         [root cAddChildViewController:nav];
     }
     root.cTabBar.tabBarItemsArray = itemTitles;
-    root.cTabBar.tabBarItemsImageSelectedArray = @[@"tabbar_palette_noselect", @"tabbar_theme_noselect", @"tabbar_music_noselect", @"tabbar_speed_select"];
-    root.cTabBar.tabBarItemsImageArray = @[@"tabbar_palette_noselect", @"tabbar_theme_noselect", @"tabbar_music_noselect", @"tabbar_speed_select"];
-//    UIImage *tabbarBg = [UIImage imageNamed:@"tabbarImg"];
-//    root.cTabBar.backgroundImage = [AppDelegate imageByCornerRadiusWithImage:tabbarBg radius:tabbarBg.size.height/2.f];
-    root.cTabBar.barTintColor = Color_FFFFFF;
+    root.cTabBar.tabBarItemsImageSelectedArray = @[@"tabbar_palette_select", @"tabbar_theme_select", @"tabbar_music_select", @"tabbar_speed_select"];
+    root.cTabBar.tabBarItemsImageArray = @[@"tabbar_palette_noselect", @"tabbar_theme_noselect", @"tabbar_music_noselect", @"tabbar_speed_noselect"];
+    root.cTabBar.backgroundImage = [UIImage imageNamed:@"tabbarImg"];
+//    root.cTabBar.barTintColor = Color_FFFFFF;
     [root.cTabBar setTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]} state:UIControlStateSelected];
 
     root.cTabBar.offset = UIOffsetMake(0, -20);

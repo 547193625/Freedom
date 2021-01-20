@@ -6,8 +6,10 @@
 //
 
 #import "FDSpeedViewController.h"
+#import "FDSpeedTopView.h"
 
 @interface FDSpeedViewController ()
+@property(nonatomic, strong) FDSpeedTopView *topView;
 
 @end
 
@@ -15,17 +17,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"Speed";
+    [self configSpeedViewUI];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+-(void)configSpeedViewUI{
+    self.fd_prefersNavigationBarHidden = YES;
+    [self.view addSubview:self.topView];
 }
-*/
+
+
+
+#pragma mark - lazy
+-(FDSpeedTopView *)topView{
+    if (!_topView) {
+        _topView = [[FDSpeedTopView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 160)];
+    }
+    return _topView;
+}
 
 @end

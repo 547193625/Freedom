@@ -21,8 +21,8 @@
 
 //iphonex ------------------------
 //是否是iPhoneX的刘海屏
-#define Is_Iphone            (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-#define YYIS_IPHONE              (kScreenWidth >=375.0f && KScreenHeight >=812.0f && Is_Iphone)
+#define Is_Iphone                 (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define YYISiPhoneX              (kScreenWidth >=375.0f && kScreenHeight >=812.0f && Is_Iphone)
 
 //状态栏高度
 #define kStatusBarHeight    (CGFloat)(YYISiPhoneX?(44):(20))
@@ -95,6 +95,17 @@
 #define Color_d82222    FDColor(0xd82222)
 #define Color_8969d9    FDColor(0x8969D9)
 #define Color_3d78f2    FDColor(0x3d78f2)
+
+
+#define Color_D8D8D8    FDColor(0xD8D8D8)
+#define Color_4D88E0    FDColor(0x4D88E0)
+
+
+
+
+
+
+
 
 //**************************************************************************************************
 //                                             字体宏定义

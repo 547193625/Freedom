@@ -31,7 +31,12 @@
 		6463878325B6EE5900692B90 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463877825B6EE5900692B90 /* MBProgressHUD.m */; };
 		6463878425B6EE5900692B90 /* LCProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463877B25B6EE5900692B90 /* LCProgressHUD.m */; };
 		6463878A25B6EF0F00692B90 /* FDBaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463878925B6EF0F00692B90 /* FDBaseNavController.m */; };
-		6463879325B6FD9500692B90 /* FDSpeedTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463879225B6FD9500692B90 /* FDSpeedTopView.m */; };
+		6468780E25B83E7D00C3DF73 /* FDSpeedTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6468780D25B83E7D00C3DF73 /* FDSpeedTopView.m */; };
+		6468781A25B8404C00C3DF73 /* UIView+SJFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6468781225B8404C00C3DF73 /* UIView+SJFrame.m */; };
+		6468781B25B8404C00C3DF73 /* UITableView+SJRegisterCellClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6468781525B8404C00C3DF73 /* UITableView+SJRegisterCellClass.m */; };
+		6468781C25B8404C00C3DF73 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6468781625B8404C00C3DF73 /* UIImage+Extension.m */; };
+		6468781D25B8404C00C3DF73 /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 6468781725B8404C00C3DF73 /* UILabel+ChangeLineSpaceAndWordSpace.m */; };
+		6468782625B845C400C3DF73 /* NSObject+RadiuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6468782525B845C400C3DF73 /* NSObject+RadiuView.m */; };
 		B3BEA89C8D41BD6764FA3C07 /* Pods_FreedomTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F5CC6670371D39302BEA28 /* Pods_FreedomTests.framework */; };
 		CE52EC46BF1F3E7B5F85A125 /* Pods_Freedom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F776A692D51D3B922377EF /* Pods_Freedom.framework */; };
 		E33C00F66CE1A7E85EABF591 /* Pods_Freedom_FreedomUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01CF7098D40FEA2A7B78D34E /* Pods_Freedom_FreedomUITests.framework */; };
@@ -105,8 +110,18 @@
 		6463877B25B6EE5900692B90 /* LCProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCProgressHUD.m; sourceTree = "<group>"; };
 		6463878825B6EF0F00692B90 /* FDBaseNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDBaseNavController.h; sourceTree = "<group>"; };
 		6463878925B6EF0F00692B90 /* FDBaseNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDBaseNavController.m; sourceTree = "<group>"; };
-		6463879125B6FD9500692B90 /* FDSpeedTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDSpeedTopView.h; sourceTree = "<group>"; };
-		6463879225B6FD9500692B90 /* FDSpeedTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDSpeedTopView.m; sourceTree = "<group>"; };
+		6468780C25B83E7D00C3DF73 /* FDSpeedTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDSpeedTopView.h; sourceTree = "<group>"; };
+		6468780D25B83E7D00C3DF73 /* FDSpeedTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDSpeedTopView.m; sourceTree = "<group>"; };
+		6468781225B8404C00C3DF73 /* UIView+SJFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SJFrame.m"; sourceTree = "<group>"; };
+		6468781325B8404C00C3DF73 /* UIView+SJFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SJFrame.h"; sourceTree = "<group>"; };
+		6468781425B8404C00C3DF73 /* UILabel+ChangeLineSpaceAndWordSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ChangeLineSpaceAndWordSpace.h"; sourceTree = "<group>"; };
+		6468781525B8404C00C3DF73 /* UITableView+SJRegisterCellClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SJRegisterCellClass.m"; sourceTree = "<group>"; };
+		6468781625B8404C00C3DF73 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		6468781725B8404C00C3DF73 /* UILabel+ChangeLineSpaceAndWordSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ChangeLineSpaceAndWordSpace.m"; sourceTree = "<group>"; };
+		6468781825B8404C00C3DF73 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		6468781925B8404C00C3DF73 /* UITableView+SJRegisterCellClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SJRegisterCellClass.h"; sourceTree = "<group>"; };
+		6468782425B845C400C3DF73 /* NSObject+RadiuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RadiuView.h"; sourceTree = "<group>"; };
+		6468782525B845C400C3DF73 /* NSObject+RadiuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RadiuView.m"; sourceTree = "<group>"; };
 		71F5CC6670371D39302BEA28 /* Pods_FreedomTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreedomTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82CE148FB011913BDE510AF0 /* Pods-Freedom-FreedomUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freedom-FreedomUITests.debug.xcconfig"; path = "Target Support Files/Pods-Freedom-FreedomUITests/Pods-Freedom-FreedomUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C283AC7E71F773B1A03E165 /* Pods-Freedom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freedom.debug.xcconfig"; path = "Target Support Files/Pods-Freedom/Pods-Freedom.debug.xcconfig"; sourceTree = "<group>"; };
@@ -284,8 +299,6 @@
 		6463870D25B6D22800692B90 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6463879125B6FD9500692B90 /* FDSpeedTopView.h */,
-				6463879225B6FD9500692B90 /* FDSpeedTopView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -319,6 +332,8 @@
 		6463871125B6D22800692B90 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6468780C25B83E7D00C3DF73 /* FDSpeedTopView.h */,
+				6468780D25B83E7D00C3DF73 /* FDSpeedTopView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -381,6 +396,14 @@
 		6463872A25B6D76C00692B90 /* UIKit+Category */ = {
 			isa = PBXGroup;
 			children = (
+				6468781825B8404C00C3DF73 /* UIImage+Extension.h */,
+				6468781625B8404C00C3DF73 /* UIImage+Extension.m */,
+				6468781425B8404C00C3DF73 /* UILabel+ChangeLineSpaceAndWordSpace.h */,
+				6468781725B8404C00C3DF73 /* UILabel+ChangeLineSpaceAndWordSpace.m */,
+				6468781925B8404C00C3DF73 /* UITableView+SJRegisterCellClass.h */,
+				6468781525B8404C00C3DF73 /* UITableView+SJRegisterCellClass.m */,
+				6468781325B8404C00C3DF73 /* UIView+SJFrame.h */,
+				6468781225B8404C00C3DF73 /* UIView+SJFrame.m */,
 			);
 			path = "UIKit+Category";
 			sourceTree = "<group>";
@@ -388,6 +411,8 @@
 		6463872B25B6D77300692B90 /* Foundation+Category */ = {
 			isa = PBXGroup;
 			children = (
+				6468782425B845C400C3DF73 /* NSObject+RadiuView.h */,
+				6468782525B845C400C3DF73 /* NSObject+RadiuView.m */,
 			);
 			path = "Foundation+Category";
 			sourceTree = "<group>";
@@ -713,22 +738,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6468780E25B83E7D00C3DF73 /* FDSpeedTopView.m in Sources */,
 				6463875725B6D8C500692B90 /* FDMusicViewController.m in Sources */,
 				6463875D25B6D8CF00692B90 /* FDSpeedViewController.m in Sources */,
 				6463873F25B6D7F900692B90 /* FDBaseViewController.m in Sources */,
 				6463878425B6EE5900692B90 /* LCProgressHUD.m in Sources */,
-				6463879325B6FD9500692B90 /* FDSpeedTopView.m in Sources */,
 				646386B625B6C59400692B90 /* AppDelegate.m in Sources */,
+				6468782625B845C400C3DF73 /* NSObject+RadiuView.m in Sources */,
 				6463873725B6D7B400692B90 /* ExtraViewController.m in Sources */,
 				646386C725B6C59600692B90 /* main.m in Sources */,
 				6463874825B6D8A600692B90 /* FDPaletteViewController.m in Sources */,
+				6468781B25B8404C00C3DF73 /* UITableView+SJRegisterCellClass.m in Sources */,
 				6463878A25B6EF0F00692B90 /* FDBaseNavController.m in Sources */,
 				6463873825B6D7B400692B90 /* CTabbarController.m in Sources */,
 				6463873525B6D7B400692B90 /* UIButton+Style.m in Sources */,
 				6463878325B6EE5900692B90 /* MBProgressHUD.m in Sources */,
+				6468781C25B8404C00C3DF73 /* UIImage+Extension.m in Sources */,
+				6468781D25B8404C00C3DF73 /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */,
 				6463873625B6D7B400692B90 /* CTabBar.m in Sources */,
 				6463877C25B6EE5900692B90 /* Reachability.m in Sources */,
 				6463875125B6D8B600692B90 /* FDThemeViewController.m in Sources */,
+				6468781A25B8404C00C3DF73 /* UIView+SJFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

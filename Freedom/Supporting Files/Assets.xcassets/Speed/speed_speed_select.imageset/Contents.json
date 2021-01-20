@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "speed_speed_icon.png",
+      "filename" : "speed_speed_select.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "speed_speed_icon@2x.png",
+      "filename" : "speed_speed_select@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "speed_speed_icon@3x.png",
+      "filename" : "speed_speed_select@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
