@@ -60,7 +60,7 @@
 
 
 // BLE Color
-#define AppBackgroundColor              FDColor(0xEBEEF3)
+#define AppBackgroundColor              FDColor(0xF3F5F8)
 #define seperatorLineColor              FDColor(0xededed)   //线条颜色
 #define Color_FFFFFF    FDColor(0xFFFFFF)
 #define Color_fafafa    FDColor(0xfafafa)
@@ -99,7 +99,8 @@
 
 #define Color_D8D8D8    FDColor(0xD8D8D8)
 #define Color_4D88E0    FDColor(0x4D88E0)
-
+#define Color_649CF0    FDColor(0x649CF0)
+#define Color_333333    FDColor(0x333333)
 
 
 

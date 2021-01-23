@@ -1,15 +1,15 @@
 //
-//  FDSpeedTopView.h
+//  FDSpeedShowView.h
 //  Freedom
 //
-//  Created by Andrew on 2021/1/20.
+//  Created by Andrew on 2021/1/23.
 //
 
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FDSpeedTopView : UIView
+@interface FDSpeedShowView : UIView
 @property (nonatomic, assign) CGFloat accelerationX; // 加速度
 @end
 
