@@ -428,7 +428,17 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
 }
 
 
-
+/** 图片圆角 */
++ (UIImage *)imageByCornerRadiusWithImage:(UIImage *)image radius:(CGFloat)radius {
+    CGSize size = image.size;
+    UIGraphicsBeginImageContextWithOptions(size, NO, [UIScreen mainScreen].scale);
+    [[UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, size.width, size.height)
+                                cornerRadius:radius] addClip];
+    [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    UIImage *finalImg = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return finalImg;
+}
 @end
 
 

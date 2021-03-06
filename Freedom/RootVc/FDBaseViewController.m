@@ -32,8 +32,8 @@
     if (self.navigationController.viewControllers.count > 1) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.bounds = CGRectMake(0, 0, 50, 44); //必须设置尺寸大小
-        [btn setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
-        [btn setImage:[UIImage imageNamed:@"back"] forState:UIControlStateSelected];
+        [btn setImage:[UIImage imageNamed:@"nav_back"] forState:UIControlStateNormal];
+        [btn setImage:[UIImage imageNamed:@"nav_back"] forState:UIControlStateSelected];
         [btn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
         btn.imageEdgeInsets = UIEdgeInsetsMake(0, -30, 0, 0);
         btn.adjustsImageWhenHighlighted = NO;

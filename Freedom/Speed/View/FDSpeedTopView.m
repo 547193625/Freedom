@@ -142,8 +142,11 @@
 
 // 侧边栏
 -(void)menuBtnClick:(UIButton *)btn{
-    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(topView:menuBtn:)]) {
+        [self.delegate topView:self menuBtn:btn];
+       }
 }
+
 // 速度
 -(void)speedBtnClick:(UIButton *)btn{
     

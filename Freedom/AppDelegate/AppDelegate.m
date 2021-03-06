@@ -6,72 +6,43 @@
 //
 
 #import "AppDelegate.h"
-#import "CTabbarController.h"
-#import "FDBaseViewController.h"
+#import "FDTabBarController.h"
 #import "FDBaseNavController.h"
-#import "FDPaletteViewController.h"
-#import "FDThemeViewController.h"
-#import "FDMusicViewController.h"
-#import "FDSpeedViewController.h"
+#import "FDSideMenuViewController.h"
+#import "MMDrawerController.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) MMDrawerController *drawerController;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
-    [self setRootViewController];
+    [self configSideMenuVC];
     return YES;
 }
 
 
-- (void)setRootViewController {
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    NSArray *itemTitles = @[@"", @"", @"", @""];
-    CTabbarController *root = [[CTabbarController alloc] init];
-    for (int i = 0; i < itemTitles.count; i++) {
-        FDBaseViewController *vc;
-        if (i == 0) {
-            vc = [[FDSpeedViewController alloc] init];
-        }else if (i ==1 ) {
-            vc = [[FDThemeViewController alloc] init];
-        }else if (i ==2 ) {
-            vc = [[FDMusicViewController alloc] init];
-        }else{
-            vc = [[FDSpeedViewController alloc] init];
-        }
-        FDBaseNavController *nav = [[FDBaseNavController alloc] initWithRootViewController:vc];
-        if (i < itemTitles.count) {
-            vc.title = itemTitles[i];
-        }
-        [root cAddChildViewController:nav];
-    }
-    root.cTabBar.tabBarItemsArray = itemTitles;
-    root.cTabBar.tabBarItemsImageSelectedArray = @[@"tabbar_palette_select", @"tabbar_theme_select", @"tabbar_music_select", @"tabbar_speed_select"];
-    root.cTabBar.tabBarItemsImageArray = @[@"tabbar_palette_noselect", @"tabbar_theme_noselect", @"tabbar_music_noselect", @"tabbar_speed_noselect"];
-    root.cTabBar.backgroundImage = [UIImage imageNamed:@"tabbarImg"];
-//    root.cTabBar.barTintColor = Color_FFFFFF;
-    [root.cTabBar setTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]} state:UIControlStateSelected];
 
-    root.cTabBar.offset = UIOffsetMake(0, -20);
-    self.window.rootViewController = root;
-    self.window.backgroundColor = Color_FFFFFF;
+-(void)configSideMenuVC{
+    FDTabBarController *tabbarVC = [[FDTabBarController alloc] init];
+    FDSideMenuViewController *menuVC = [[FDSideMenuViewController alloc] init];
+    FDBaseNavController *menuNvaVC = [[FDBaseNavController alloc]initWithRootViewController:menuVC];
+
+    self.drawerController = [[MMDrawerController alloc]initWithCenterViewController:tabbarVC  rightDrawerViewController:menuNvaVC];
+
+    self.drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModePanningNavigationBar;
+    self.drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModeAll;
+    self.drawerController.maximumRightDrawerWidth = kScreenWidth - 75;
+    self.drawerController.showsShadow  = NO;
+  
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window setRootViewController:self.drawerController];
     [self.window makeKeyAndVisible];
 }
 
-/** 图片圆角 */
-+ (UIImage *)imageByCornerRadiusWithImage:(UIImage *)image radius:(CGFloat)radius {
-    CGSize size = image.size;
-    UIGraphicsBeginImageContextWithOptions(size, NO, [UIScreen mainScreen].scale);
-    [[UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, size.width, size.height)
-                                cornerRadius:radius] addClip];
-    [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
-    UIImage *finalImg = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return finalImg;
-}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

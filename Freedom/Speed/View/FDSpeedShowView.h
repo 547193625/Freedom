@@ -9,7 +9,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class FDSpeedShowView;
+
+@protocol FDSpeedShowViewDelegate <NSObject>
+
+- (void)showView:(FDSpeedShowView *)showView addBtn:(UIButton *)addBtn;
+
+@end
+
+
 @interface FDSpeedShowView : UIView
+@property (nonatomic, weak) id<FDSpeedShowViewDelegate> delegate;
 @property (nonatomic, assign) CGFloat accelerationX; // 加速度
 @end
 

@@ -17,6 +17,7 @@ pod 'FDFullscreenPopGesture', '1.1'
 pod 'SPPageMenu'
 pod 'YYModel'
 pod 'IQKeyboardManager', '6.2.0'
+pod 'MMDrawerController', '~> 0.5.7'
 # 数据库框架
 pod 'LKDBHelper'
 

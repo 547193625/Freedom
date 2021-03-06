@@ -7,11 +7,13 @@
 
 #import "FDSpeedViewController.h"
 #import <CoreMotion/CoreMotion.h>
+#import "FDChooseColorViewController.h"
+#import "FDAddColorViewController.h"
 #import "FDSpeedTopView.h"
 #import "FDSpeedShowView.h"
 
 
-@interface FDSpeedViewController ()
+@interface FDSpeedViewController ()<FDSpeedTopViewDelegate,FDSpeedShowViewDelegate>
 @property(nonatomic, strong) FDSpeedTopView *topView;
 @property(nonatomic, strong) FDSpeedShowView *showView;
 @property(nonatomic, strong) CMMotionManager *motionManager;
@@ -47,24 +49,43 @@
     [self.motionManager startAccelerometerUpdatesToQueue:[[NSOperationQueue alloc] init] withHandler:^(CMAccelerometerData * _Nullable accelerometerData, NSError * _Nullable error) {
         //获取加速度
         CMAcceleration acceleration = accelerometerData.acceleration;
-        NSLog(@"加速度 == x:%f, y:%f, z:%f", acceleration.x, acceleration.y, acceleration.z);
+//        DebugLog(@"加速度 == x:%f, y:%f, z:%f", acceleration.x, acceleration.y, acceleration.z);
         self.topView.accelerationX = acceleration.x;
         self.showView.accelerationX = acceleration.x;
     }];
 }
 
 
+-(void)topView:(FDSpeedTopView *)topView menuBtn:(UIButton *)menuBtn{
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
+}
+
+
+#pragma mark - FDSpeedShowViewDelegate
+-(void)showView:(FDSpeedShowView *)showView addBtn:(UIButton *)addBtn{
+//    FDChooseColorViewController *vc = [[FDChooseColorViewController alloc] init];
+//    vc.hidesBottomBarWhenPushed = YES;
+//    [self.navigationController pushViewController:vc animated:YES];
+    
+    FDAddColorViewController *vc = [[FDAddColorViewController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
 #pragma mark - lazy
 -(FDSpeedTopView *)topView{
     if (!_topView) {
         _topView = [[FDSpeedTopView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 170+kTopBarSafeHeight)];
+        _topView.delegate = self;
     }
     return _topView;
 }
 
 -(FDSpeedShowView *)showView{
     if (!_showView) {
-        _showView = [[FDSpeedShowView alloc] initWithFrame:CGRectMake(0, kScreenHeight - kScreenWidth - 100, kScreenWidth, kScreenWidth)];
+        _showView = [[FDSpeedShowView alloc] initWithFrame:CGRectMake(0, kScreenHeight - kScreenWidth - kTabBarHeight, kScreenWidth, kScreenWidth)];
+        _showView.delegate = self;
     }
     return _showView;
 }

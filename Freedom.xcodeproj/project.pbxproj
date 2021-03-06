@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		643C29A725F316F900C09336 /* FDSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C29A625F316F900C09336 /* FDSideMenuViewController.m */; };
+		643C29B125F3186500C09336 /* FDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C29B025F3186500C09336 /* FDTabBarController.m */; };
+		643C29C125F3281400C09336 /* FDSideMenuTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C29C025F3281400C09336 /* FDSideMenuTitleView.m */; };
+		643C29D925F334BB00C09336 /* NSObject+RunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C29D825F334BB00C09336 /* NSObject+RunTime.m */; };
+		643C29DF25F359EA00C09336 /* UIBarButtonItem+item.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C29DE25F359EA00C09336 /* UIBarButtonItem+item.m */; };
+		643C29E525F35A3F00C09336 /* FDChooseColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C29E425F35A3F00C09336 /* FDChooseColorViewController.m */; };
+		643C29EB25F35FAB00C09336 /* UIImage+ColorSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C29EA25F35FAB00C09336 /* UIImage+ColorSelect.m */; };
+		643C29F125F3601000C09336 /* FDAddColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C29F025F3601000C09336 /* FDAddColorViewController.m */; };
+		643C2A0C25F36F2C00C09336 /* FDColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C2A0B25F36F2C00C09336 /* FDColorPickerView.m */; };
+		643C2A1225F36F7B00C09336 /* MSDragButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C2A1025F36F7A00C09336 /* MSDragButton.m */; };
+		643C2A1A25F371C300C09336 /* FDTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C2A1925F371C300C09336 /* FDTextFiled.m */; };
+		643C2A2325F37EA300C09336 /* FDFavoriteColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C2A2225F37EA300C09336 /* FDFavoriteColorView.m */; };
+		643C2A2B25F38FB200C09336 /* UIButton+TextImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C2A2A25F38FB200C09336 /* UIButton+TextImage.m */; };
 		646386B625B6C59400692B90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 646386B525B6C59400692B90 /* AppDelegate.m */; };
 		646386C125B6C59600692B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 646386C025B6C59600692B90 /* Assets.xcassets */; };
 		646386C725B6C59600692B90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 646386C625B6C59600692B90 /* main.m */; };
 		646386D125B6C59600692B90 /* FreedomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 646386D025B6C59600692B90 /* FreedomTests.m */; };
 		646386DC25B6C59600692B90 /* FreedomUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 646386DB25B6C59600692B90 /* FreedomUITests.m */; };
-		6463873525B6D7B400692B90 /* UIButton+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463872E25B6D7B400692B90 /* UIButton+Style.m */; };
-		6463873625B6D7B400692B90 /* CTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463872F25B6D7B400692B90 /* CTabBar.m */; };
-		6463873725B6D7B400692B90 /* ExtraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463873125B6D7B400692B90 /* ExtraViewController.m */; };
-		6463873825B6D7B400692B90 /* CTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463873425B6D7B400692B90 /* CTabbarController.m */; };
 		6463873F25B6D7F900692B90 /* FDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463873E25B6D7F900692B90 /* FDBaseViewController.m */; };
 		6463874825B6D8A600692B90 /* FDPaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463874725B6D8A600692B90 /* FDPaletteViewController.m */; };
 		6463875125B6D8B600692B90 /* FDThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463875025B6D8B600692B90 /* FDThemeViewController.m */; };
@@ -64,6 +73,32 @@
 		01CF7098D40FEA2A7B78D34E /* Pods_Freedom_FreedomUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Freedom_FreedomUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F07007AC6C6F923B4C5C528 /* Pods-FreedomTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreedomTests.debug.xcconfig"; path = "Target Support Files/Pods-FreedomTests/Pods-FreedomTests.debug.xcconfig"; sourceTree = "<group>"; };
 		49F776A692D51D3B922377EF /* Pods_Freedom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Freedom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		643C29A525F316F900C09336 /* FDSideMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDSideMenuViewController.h; sourceTree = "<group>"; };
+		643C29A625F316F900C09336 /* FDSideMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDSideMenuViewController.m; sourceTree = "<group>"; };
+		643C29AF25F3186500C09336 /* FDTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDTabBarController.h; sourceTree = "<group>"; };
+		643C29B025F3186500C09336 /* FDTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDTabBarController.m; sourceTree = "<group>"; };
+		643C29BF25F3281400C09336 /* FDSideMenuTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDSideMenuTitleView.h; sourceTree = "<group>"; };
+		643C29C025F3281400C09336 /* FDSideMenuTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDSideMenuTitleView.m; sourceTree = "<group>"; };
+		643C29D725F334BB00C09336 /* NSObject+RunTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RunTime.h"; sourceTree = "<group>"; };
+		643C29D825F334BB00C09336 /* NSObject+RunTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RunTime.m"; sourceTree = "<group>"; };
+		643C29DD25F359EA00C09336 /* UIBarButtonItem+item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+item.h"; sourceTree = "<group>"; };
+		643C29DE25F359EA00C09336 /* UIBarButtonItem+item.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+item.m"; sourceTree = "<group>"; };
+		643C29E325F35A3F00C09336 /* FDChooseColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDChooseColorViewController.h; sourceTree = "<group>"; };
+		643C29E425F35A3F00C09336 /* FDChooseColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDChooseColorViewController.m; sourceTree = "<group>"; };
+		643C29E925F35FAB00C09336 /* UIImage+ColorSelect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorSelect.h"; sourceTree = "<group>"; };
+		643C29EA25F35FAB00C09336 /* UIImage+ColorSelect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorSelect.m"; sourceTree = "<group>"; };
+		643C29EF25F3601000C09336 /* FDAddColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAddColorViewController.h; sourceTree = "<group>"; };
+		643C29F025F3601000C09336 /* FDAddColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDAddColorViewController.m; sourceTree = "<group>"; };
+		643C2A0A25F36F2C00C09336 /* FDColorPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDColorPickerView.h; sourceTree = "<group>"; };
+		643C2A0B25F36F2C00C09336 /* FDColorPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDColorPickerView.m; sourceTree = "<group>"; };
+		643C2A1025F36F7A00C09336 /* MSDragButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDragButton.m; sourceTree = "<group>"; };
+		643C2A1125F36F7A00C09336 /* MSDragButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDragButton.h; sourceTree = "<group>"; };
+		643C2A1825F371C300C09336 /* FDTextFiled.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDTextFiled.h; sourceTree = "<group>"; };
+		643C2A1925F371C300C09336 /* FDTextFiled.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDTextFiled.m; sourceTree = "<group>"; };
+		643C2A2125F37EA300C09336 /* FDFavoriteColorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDFavoriteColorView.h; sourceTree = "<group>"; };
+		643C2A2225F37EA300C09336 /* FDFavoriteColorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDFavoriteColorView.m; sourceTree = "<group>"; };
+		643C2A2925F38FB200C09336 /* UIButton+TextImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+TextImage.h"; sourceTree = "<group>"; };
+		643C2A2A25F38FB200C09336 /* UIButton+TextImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TextImage.m"; sourceTree = "<group>"; };
 		646386B125B6C59400692B90 /* Freedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		646386B425B6C59400692B90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		646386B525B6C59400692B90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,14 +112,6 @@
 		646386DB25B6C59600692B90 /* FreedomUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreedomUITests.m; sourceTree = "<group>"; };
 		646386DD25B6C59600692B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6463871725B6D28400692B90 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		6463872D25B6D7B400692B90 /* ExtraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraViewController.h; sourceTree = "<group>"; };
-		6463872E25B6D7B400692B90 /* UIButton+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Style.m"; sourceTree = "<group>"; };
-		6463872F25B6D7B400692B90 /* CTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTabBar.m; sourceTree = "<group>"; };
-		6463873025B6D7B400692B90 /* CTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTabbarController.h; sourceTree = "<group>"; };
-		6463873125B6D7B400692B90 /* ExtraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraViewController.m; sourceTree = "<group>"; };
-		6463873225B6D7B400692B90 /* UIButton+Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Style.h"; sourceTree = "<group>"; };
-		6463873325B6D7B400692B90 /* CTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTabBar.h; sourceTree = "<group>"; };
-		6463873425B6D7B400692B90 /* CTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTabbarController.m; sourceTree = "<group>"; };
 		6463873D25B6D7F900692B90 /* FDBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDBaseViewController.h; sourceTree = "<group>"; };
 		6463873E25B6D7F900692B90 /* FDBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDBaseViewController.m; sourceTree = "<group>"; };
 		6463874625B6D8A600692B90 /* FDPaletteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDPaletteViewController.h; sourceTree = "<group>"; };
@@ -174,6 +201,33 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		643C29A425F316BF00C09336 /* LeftVC */ = {
+			isa = PBXGroup;
+			children = (
+				643C29BD25F327C900C09336 /* Controller */,
+				643C29BE25F327D200C09336 /* View */,
+			);
+			path = LeftVC;
+			sourceTree = "<group>";
+		};
+		643C29BD25F327C900C09336 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				643C29A525F316F900C09336 /* FDSideMenuViewController.h */,
+				643C29A625F316F900C09336 /* FDSideMenuViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		643C29BE25F327D200C09336 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				643C29BF25F3281400C09336 /* FDSideMenuTitleView.h */,
+				643C29C025F3281400C09336 /* FDSideMenuTitleView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		646386A825B6C59400692B90 = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +256,7 @@
 				6463871625B6D23500692B90 /* AppDelegate */,
 				6463873C25B6D7D000692B90 /* RootVc */,
 				6463872925B6D74900692B90 /* Utilities */,
+				643C29A425F316BF00C09336 /* LeftVC */,
 				6463870625B6D22800692B90 /* Palette */,
 				6463871225B6D22800692B90 /* Theme */,
 				6463870A25B6D22800692B90 /* Music */,
@@ -321,6 +376,10 @@
 			children = (
 				6463875B25B6D8CF00692B90 /* FDSpeedViewController.h */,
 				6463875C25B6D8CF00692B90 /* FDSpeedViewController.m */,
+				643C29E325F35A3F00C09336 /* FDChooseColorViewController.h */,
+				643C29E425F35A3F00C09336 /* FDChooseColorViewController.m */,
+				643C29EF25F3601000C09336 /* FDAddColorViewController.h */,
+				643C29F025F3601000C09336 /* FDAddColorViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -339,6 +398,14 @@
 				6468780D25B83E7D00C3DF73 /* FDSpeedTopView.m */,
 				6479570725BBD02600E6DED4 /* FDSpeedShowView.h */,
 				6479570825BBD02600E6DED4 /* FDSpeedShowView.m */,
+				643C2A0A25F36F2C00C09336 /* FDColorPickerView.h */,
+				643C2A0B25F36F2C00C09336 /* FDColorPickerView.m */,
+				643C2A2125F37EA300C09336 /* FDFavoriteColorView.h */,
+				643C2A2225F37EA300C09336 /* FDFavoriteColorView.m */,
+				643C2A1125F36F7A00C09336 /* MSDragButton.h */,
+				643C2A1025F36F7A00C09336 /* MSDragButton.m */,
+				643C2A1825F371C300C09336 /* FDTextFiled.h */,
+				643C2A1925F371C300C09336 /* FDTextFiled.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -391,7 +458,6 @@
 				6463877025B6EE5900692B90 /* LCProgressHUD */,
 				6463876D25B6EE5900692B90 /* Reachability */,
 				6463876425B6E93C00692B90 /* Static */,
-				6463872C25B6D77F00692B90 /* CTabbarController */,
 				6463872B25B6D77300692B90 /* Foundation+Category */,
 				6463872A25B6D76C00692B90 /* UIKit+Category */,
 			);
@@ -409,6 +475,12 @@
 				6468781525B8404C00C3DF73 /* UITableView+SJRegisterCellClass.m */,
 				6468781325B8404C00C3DF73 /* UIView+SJFrame.h */,
 				6468781225B8404C00C3DF73 /* UIView+SJFrame.m */,
+				643C29DD25F359EA00C09336 /* UIBarButtonItem+item.h */,
+				643C29DE25F359EA00C09336 /* UIBarButtonItem+item.m */,
+				643C29E925F35FAB00C09336 /* UIImage+ColorSelect.h */,
+				643C29EA25F35FAB00C09336 /* UIImage+ColorSelect.m */,
+				643C2A2925F38FB200C09336 /* UIButton+TextImage.h */,
+				643C2A2A25F38FB200C09336 /* UIButton+TextImage.m */,
 			);
 			path = "UIKit+Category";
 			sourceTree = "<group>";
@@ -418,23 +490,10 @@
 			children = (
 				6468782425B845C400C3DF73 /* NSObject+RadiuView.h */,
 				6468782525B845C400C3DF73 /* NSObject+RadiuView.m */,
+				643C29D725F334BB00C09336 /* NSObject+RunTime.h */,
+				643C29D825F334BB00C09336 /* NSObject+RunTime.m */,
 			);
 			path = "Foundation+Category";
-			sourceTree = "<group>";
-		};
-		6463872C25B6D77F00692B90 /* CTabbarController */ = {
-			isa = PBXGroup;
-			children = (
-				6463873325B6D7B400692B90 /* CTabBar.h */,
-				6463872F25B6D7B400692B90 /* CTabBar.m */,
-				6463873025B6D7B400692B90 /* CTabbarController.h */,
-				6463873425B6D7B400692B90 /* CTabbarController.m */,
-				6463872D25B6D7B400692B90 /* ExtraViewController.h */,
-				6463873125B6D7B400692B90 /* ExtraViewController.m */,
-				6463873225B6D7B400692B90 /* UIButton+Style.h */,
-				6463872E25B6D7B400692B90 /* UIButton+Style.m */,
-			);
-			path = CTabbarController;
 			sourceTree = "<group>";
 		};
 		6463873C25B6D7D000692B90 /* RootVc */ = {
@@ -444,6 +503,8 @@
 				6463873E25B6D7F900692B90 /* FDBaseViewController.m */,
 				6463878825B6EF0F00692B90 /* FDBaseNavController.h */,
 				6463878925B6EF0F00692B90 /* FDBaseNavController.m */,
+				643C29AF25F3186500C09336 /* FDTabBarController.h */,
+				643C29B025F3186500C09336 /* FDTabBarController.m */,
 			);
 			path = RootVc;
 			sourceTree = "<group>";
@@ -744,27 +805,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				6468780E25B83E7D00C3DF73 /* FDSpeedTopView.m in Sources */,
+				643C2A1A25F371C300C09336 /* FDTextFiled.m in Sources */,
+				643C2A0C25F36F2C00C09336 /* FDColorPickerView.m in Sources */,
 				6463875725B6D8C500692B90 /* FDMusicViewController.m in Sources */,
+				643C29EB25F35FAB00C09336 /* UIImage+ColorSelect.m in Sources */,
 				6463875D25B6D8CF00692B90 /* FDSpeedViewController.m in Sources */,
+				643C29F125F3601000C09336 /* FDAddColorViewController.m in Sources */,
+				643C29DF25F359EA00C09336 /* UIBarButtonItem+item.m in Sources */,
 				6463873F25B6D7F900692B90 /* FDBaseViewController.m in Sources */,
+				643C2A2B25F38FB200C09336 /* UIButton+TextImage.m in Sources */,
 				6463878425B6EE5900692B90 /* LCProgressHUD.m in Sources */,
 				646386B625B6C59400692B90 /* AppDelegate.m in Sources */,
 				6468782625B845C400C3DF73 /* NSObject+RadiuView.m in Sources */,
-				6463873725B6D7B400692B90 /* ExtraViewController.m in Sources */,
 				646386C725B6C59600692B90 /* main.m in Sources */,
 				6463874825B6D8A600692B90 /* FDPaletteViewController.m in Sources */,
 				6468781B25B8404C00C3DF73 /* UITableView+SJRegisterCellClass.m in Sources */,
+				643C29B125F3186500C09336 /* FDTabBarController.m in Sources */,
+				643C29C125F3281400C09336 /* FDSideMenuTitleView.m in Sources */,
+				643C29D925F334BB00C09336 /* NSObject+RunTime.m in Sources */,
 				6463878A25B6EF0F00692B90 /* FDBaseNavController.m in Sources */,
-				6463873825B6D7B400692B90 /* CTabbarController.m in Sources */,
-				6463873525B6D7B400692B90 /* UIButton+Style.m in Sources */,
 				6463878325B6EE5900692B90 /* MBProgressHUD.m in Sources */,
 				6479570925BBD02600E6DED4 /* FDSpeedShowView.m in Sources */,
+				643C29E525F35A3F00C09336 /* FDChooseColorViewController.m in Sources */,
+				643C2A2325F37EA300C09336 /* FDFavoriteColorView.m in Sources */,
 				6468781C25B8404C00C3DF73 /* UIImage+Extension.m in Sources */,
 				6468781D25B8404C00C3DF73 /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */,
-				6463873625B6D7B400692B90 /* CTabBar.m in Sources */,
+				643C2A1225F36F7B00C09336 /* MSDragButton.m in Sources */,
 				6463877C25B6EE5900692B90 /* Reachability.m in Sources */,
 				6463875125B6D8B600692B90 /* FDThemeViewController.m in Sources */,
 				6468781A25B8404C00C3DF73 /* UIView+SJFrame.m in Sources */,
+				643C29A725F316F900C09336 /* FDSideMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

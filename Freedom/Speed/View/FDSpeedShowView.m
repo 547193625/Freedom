@@ -179,12 +179,11 @@
 
 // 添加
 -(void)addBtnClick:(UIButton *)btn{
-
+    if (self.delegate && [self.delegate respondsToSelector:@selector(showView:addBtn:)]) {
+        [self.delegate showView:self addBtn:btn];
+       }
     
-
 }
-
-
 
 
 #pragma mark - lazy load

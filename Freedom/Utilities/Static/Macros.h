@@ -42,6 +42,24 @@
 #define kTopBarMakeHeight    (CGFloat)(YYISiPhoneX?(24):(0))
 
 
+// 屏幕判定（最低5）
+#define IS_IPHONE4INCH  (kScreenHeight == 568 ? YES : NO)//5，se
+#define IS_IPHONE47INCH  (kScreenHeight == 667 ? YES : NO)//6, 7，8
+#define IS_IPHONE55INCH (kScreenHeight == 736 ? YES : NO)//6,7,8 plus
+#define IS_IPHONE58INCH (kScreenHeight == 812 ? YES : NO)//x, xs
+#define IS_IPHONE6INCH (kScreenHeight == 896 ? YES : NO)//xr, xs max
+
+//屏宽320
+#define IS_WIDTH320     (IS_IPHONE4INCH ? YES : NO)
+//屏宽375
+#define IS_WIDTH375     ((IS_IPHONE47INCH || IS_IPHONE58INCH) ? YES : NO)
+//屏宽414
+#define IS_WIDTH414     ((IS_IPHONE55INCH || IS_IPHONE6INCH) ? YES : NO)
+
+#define Suit414Width           1.104
+#define Suit320Width            1.171875
+
+
 #define NONNULLSTRING(str)      ((str == nil || [str isEqualToString:@""] || [str isKindOfClass:[NSNull class]]) ? @"" : str)
 
 
@@ -99,9 +117,11 @@
 
 #define Color_D8D8D8    FDColor(0xD8D8D8)
 #define Color_4D88E0    FDColor(0x4D88E0)
-#define Color_649CF0    FDColor(0x649CF0)
+#define Color_649CF0    FDColor(0x649CF0) //蓝色
 #define Color_333333    FDColor(0x333333)
-
+#define Color_999999    FDColor(0x999999)
+#define Color_EBEEF3    FDColor(0xEBEEF3)
+#define Color_F3F5F8    FDColor(0xF3F5F8)
 
 
 

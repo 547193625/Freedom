@@ -22,16 +22,19 @@
 
 - (void)setNavigationMethod{
     self.navigationBar.translucent = NO;
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
-    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
-    self.navigationController.navigationBar.translucent = false;
-    self.navigationController.navigationBar.barTintColor = Color_fafafa;
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:16.0],NSForegroundColorAttributeName:Color_1f1f1f}];
+    UINavigationBar *navBar = [UINavigationBar appearance];
+    navBar.barTintColor = Color_649CF0;
+      /** 设置导航栏标题文字颜色 */
+      NSDictionary *dict = @{
+                             NSForegroundColorAttributeName : Color_FFFFFF,
+                             NSFontAttributeName:[UIFont boldSystemFontOfSize:18]
+                             };
+      [navBar setTitleTextAttributes:dict];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
-    return UIStatusBarStyleDefault;
+    return UIStatusBarStyleLightContent;
 }
 
 - (BOOL)prefersStatusBarHidden

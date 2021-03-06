@@ -52,6 +52,8 @@
  */
 + (UIImage*)gradientImageWithBounds:(CGRect)bounds andColors:(NSArray*)colors andGradientType:(int)gradientType;
 
+/** 图片圆角 */
++ (UIImage *)imageByCornerRadiusWithImage:(UIImage *)image radius:(CGFloat)radius;
 @end
 
 
