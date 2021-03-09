@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6437623925F6294200D3B7D4 /* FDColorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6437623825F6294200D3B7D4 /* FDColorCollectionViewCell.m */; };
+		6437623F25F6295D00D3B7D4 /* FDColorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6437623E25F6295D00D3B7D4 /* FDColorModel.m */; };
 		643C29A725F316F900C09336 /* FDSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C29A625F316F900C09336 /* FDSideMenuViewController.m */; };
 		643C29B125F3186500C09336 /* FDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C29B025F3186500C09336 /* FDTabBarController.m */; };
 		643C29C125F3281400C09336 /* FDSideMenuTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C29C025F3281400C09336 /* FDSideMenuTitleView.m */; };
@@ -20,6 +22,7 @@
 		643C2A1A25F371C300C09336 /* FDTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C2A1925F371C300C09336 /* FDTextFiled.m */; };
 		643C2A2325F37EA300C09336 /* FDFavoriteColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C2A2225F37EA300C09336 /* FDFavoriteColorView.m */; };
 		643C2A2B25F38FB200C09336 /* UIButton+TextImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C2A2A25F38FB200C09336 /* UIButton+TextImage.m */; };
+		643C502A25F72D8A007AAC1F /* FDLightSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C502925F72D8A007AAC1F /* FDLightSlideView.m */; };
 		646386B625B6C59400692B90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 646386B525B6C59400692B90 /* AppDelegate.m */; };
 		646386C125B6C59600692B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 646386C025B6C59600692B90 /* Assets.xcassets */; };
 		646386C725B6C59600692B90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 646386C625B6C59600692B90 /* main.m */; };
@@ -73,6 +76,10 @@
 		01CF7098D40FEA2A7B78D34E /* Pods_Freedom_FreedomUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Freedom_FreedomUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F07007AC6C6F923B4C5C528 /* Pods-FreedomTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreedomTests.debug.xcconfig"; path = "Target Support Files/Pods-FreedomTests/Pods-FreedomTests.debug.xcconfig"; sourceTree = "<group>"; };
 		49F776A692D51D3B922377EF /* Pods_Freedom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Freedom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6437623725F6294200D3B7D4 /* FDColorCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDColorCollectionViewCell.h; sourceTree = "<group>"; };
+		6437623825F6294200D3B7D4 /* FDColorCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDColorCollectionViewCell.m; sourceTree = "<group>"; };
+		6437623D25F6295D00D3B7D4 /* FDColorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDColorModel.h; sourceTree = "<group>"; };
+		6437623E25F6295D00D3B7D4 /* FDColorModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDColorModel.m; sourceTree = "<group>"; };
 		643C29A525F316F900C09336 /* FDSideMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDSideMenuViewController.h; sourceTree = "<group>"; };
 		643C29A625F316F900C09336 /* FDSideMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDSideMenuViewController.m; sourceTree = "<group>"; };
 		643C29AF25F3186500C09336 /* FDTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDTabBarController.h; sourceTree = "<group>"; };
@@ -99,6 +106,8 @@
 		643C2A2225F37EA300C09336 /* FDFavoriteColorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDFavoriteColorView.m; sourceTree = "<group>"; };
 		643C2A2925F38FB200C09336 /* UIButton+TextImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+TextImage.h"; sourceTree = "<group>"; };
 		643C2A2A25F38FB200C09336 /* UIButton+TextImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TextImage.m"; sourceTree = "<group>"; };
+		643C502825F72D8A007AAC1F /* FDLightSlideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLightSlideView.h; sourceTree = "<group>"; };
+		643C502925F72D8A007AAC1F /* FDLightSlideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLightSlideView.m; sourceTree = "<group>"; };
 		646386B125B6C59400692B90 /* Freedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		646386B425B6C59400692B90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		646386B525B6C59400692B90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -387,6 +396,8 @@
 		6463871025B6D22800692B90 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6437623D25F6295D00D3B7D4 /* FDColorModel.h */,
+				6437623E25F6295D00D3B7D4 /* FDColorModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -402,10 +413,14 @@
 				643C2A0B25F36F2C00C09336 /* FDColorPickerView.m */,
 				643C2A2125F37EA300C09336 /* FDFavoriteColorView.h */,
 				643C2A2225F37EA300C09336 /* FDFavoriteColorView.m */,
+				643C502825F72D8A007AAC1F /* FDLightSlideView.h */,
+				643C502925F72D8A007AAC1F /* FDLightSlideView.m */,
 				643C2A1125F36F7A00C09336 /* MSDragButton.h */,
 				643C2A1025F36F7A00C09336 /* MSDragButton.m */,
 				643C2A1825F371C300C09336 /* FDTextFiled.h */,
 				643C2A1925F371C300C09336 /* FDTextFiled.m */,
+				6437623725F6294200D3B7D4 /* FDColorCollectionViewCell.h */,
+				6437623825F6294200D3B7D4 /* FDColorCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -810,13 +825,16 @@
 				6463875725B6D8C500692B90 /* FDMusicViewController.m in Sources */,
 				643C29EB25F35FAB00C09336 /* UIImage+ColorSelect.m in Sources */,
 				6463875D25B6D8CF00692B90 /* FDSpeedViewController.m in Sources */,
+				6437623925F6294200D3B7D4 /* FDColorCollectionViewCell.m in Sources */,
 				643C29F125F3601000C09336 /* FDAddColorViewController.m in Sources */,
 				643C29DF25F359EA00C09336 /* UIBarButtonItem+item.m in Sources */,
 				6463873F25B6D7F900692B90 /* FDBaseViewController.m in Sources */,
+				6437623F25F6295D00D3B7D4 /* FDColorModel.m in Sources */,
 				643C2A2B25F38FB200C09336 /* UIButton+TextImage.m in Sources */,
 				6463878425B6EE5900692B90 /* LCProgressHUD.m in Sources */,
 				646386B625B6C59400692B90 /* AppDelegate.m in Sources */,
 				6468782625B845C400C3DF73 /* NSObject+RadiuView.m in Sources */,
+				643C502A25F72D8A007AAC1F /* FDLightSlideView.m in Sources */,
 				646386C725B6C59600692B90 /* main.m in Sources */,
 				6463874825B6D8A600692B90 /* FDPaletteViewController.m in Sources */,
 				6468781B25B8404C00C3DF73 /* UITableView+SJRegisterCellClass.m in Sources */,

@@ -122,6 +122,7 @@
 #define Color_999999    FDColor(0x999999)
 #define Color_EBEEF3    FDColor(0xEBEEF3)
 #define Color_F3F5F8    FDColor(0xF3F5F8)
+#define Color_F7F9FA    FDColor(0xF7F9FA)
 
 
 

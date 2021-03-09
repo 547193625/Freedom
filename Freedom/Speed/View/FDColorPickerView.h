@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 // 随机坐标位置
 -(void)updateDragButtonPoint:(CGPoint)point;
 
+// 更新选中的颜色
+-(void)updateSelectDragButtonColor:(CGPoint)point;
 
 @end
 

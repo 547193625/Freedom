@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FDAddColorViewController : FDBaseViewController
-@property (nonatomic, strong) NSMutableArray<UIColor *> *selectColorArray;
+@property (nonatomic, strong) NSMutableArray *selectColorArray;
 @end
 
 NS_ASSUME_NONNULL_END

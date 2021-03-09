@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FDColorModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -13,7 +14,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol FDFavoriteColorViewDelegate <NSObject>
 
-- (void)favoriteColorView:(FDFavoriteColorView *)favoriteColorView addBtn:(UIButton *)addBtn;
+// 添加
+- (void)favoriteColorView:(FDFavoriteColorView *)favoriteColorView item:(NSInteger )item;
+
+// 点击了颜色
+- (void)favoriteColorView:(FDFavoriteColorView *)favoriteColorView colorModel:(FDColorModel * )colorModel item:(NSInteger )item array:(NSMutableArray <FDColorModel *>*)array;
+
+// 删除
+- (void)favoriteColorView:(FDFavoriteColorView *)favoriteColorView  array:(NSMutableArray <FDColorModel *>*)array item:(NSInteger )item;
+
 
 @end
 
@@ -23,7 +32,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id <FDFavoriteColorViewDelegate> delegate;
 
+// 更新颜色数组
 - (void)updateSelectedColor:(NSMutableArray *)preSelectColorArray;
+
+// 更新单个颜色
+-(void)updateSelectedColorModel:(FDColorModel *)colorModel;
+
 
 - (instancetype)initWithFrame:(CGRect)frame preSelectColorArray:(NSMutableArray *)preSelectColorArray;
 

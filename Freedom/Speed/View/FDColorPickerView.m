@@ -81,6 +81,12 @@
 }
 
 
+-(void)updateSelectDragButtonColor:(CGPoint )point{
+    self.dragButton.center =  point;
+}
+
+
+
 - (UIColor*)getPixelColorAtLocation:(CGPoint)point {
     UIColor *color = nil;
     
@@ -115,6 +121,7 @@
     
     return color;
 }
+
 
 - (CGContextRef)createARGBBitmapContextFromImage:(CGImageRef)inImage {
     CGContextRef    context = NULL;
@@ -159,6 +166,8 @@
     
     return context;
 }
+
+
 
 /**
  适配 给定375屏尺寸，适配320和414屏尺寸
