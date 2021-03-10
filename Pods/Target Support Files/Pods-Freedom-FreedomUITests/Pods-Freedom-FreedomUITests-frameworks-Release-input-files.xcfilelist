@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-Freedom-FreedomUITests/Pods-Freedom-FreedomUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AAChartKit/AAChartKit.framework
 ${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
 ${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework
 ${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework

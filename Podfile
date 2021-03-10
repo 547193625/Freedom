@@ -18,6 +18,7 @@ pod 'SPPageMenu'
 pod 'YYModel'
 pod 'IQKeyboardManager', '6.2.0'
 pod 'MMDrawerController', '~> 0.5.7'
+pod 'AAChartKit', :git => 'https://github.com/AAChartModel/AAChartKit.git'
 # 数据库框架
 pod 'LKDBHelper'
 

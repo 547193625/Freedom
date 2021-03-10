@@ -55,7 +55,7 @@ static FDTabBarController *tabBarVC = nil;
     
     NSArray *childArray = @[
                         @{
-                            kClassKey : @"FDSpeedViewController",
+                            kClassKey : @"FDThemeViewController",
                             kClassTitleKey : @"调色板",
                             kClassImageKey : @"tabbar_palette_noselect",
                             kClassSelectImageKey : @"tabbar_palette_select"

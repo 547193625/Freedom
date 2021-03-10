@@ -1,4 +1,5 @@
 PODS:
+  - AAChartKit (6.0.0)
   - AFNetworking (4.0.1):
     - AFNetworking/NSURLSession (= 4.0.1)
     - AFNetworking/Reachability (= 4.0.1)
@@ -46,6 +47,7 @@ PODS:
   - YYModel (1.0.4)
 
 DEPENDENCIES:
+  - AAChartKit (from `https://github.com/AAChartModel/AAChartKit.git`)
   - AFNetworking (~> 4.0)
   - FDFullscreenPopGesture (= 1.1)
   - IQKeyboardManager (= 6.2.0)
@@ -75,7 +77,17 @@ SPEC REPOS:
     - SPPageMenu
     - YYModel
 
+EXTERNAL SOURCES:
+  AAChartKit:
+    :git: https://github.com/AAChartModel/AAChartKit.git
+
+CHECKOUT OPTIONS:
+  AAChartKit:
+    :commit: ca3c598f0ca23bd7d0bce5fe9c4f740a61f422af
+    :git: https://github.com/AAChartModel/AAChartKit.git
+
 SPEC CHECKSUMS:
+  AAChartKit: dffacac3b641f2d2dc2fbf5f227350d22faee784
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
@@ -90,6 +102,6 @@ SPEC CHECKSUMS:
   SPPageMenu: da182aafcec55719d5c326103cc7716c1e48f311
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 271f2d49b2f5f6c184045f1a7d0c450f42352220
+PODFILE CHECKSUM: e9c45411dcfb3d40c86fdc1039ff550b2110fa3a
 
 COCOAPODS: 1.9.1
