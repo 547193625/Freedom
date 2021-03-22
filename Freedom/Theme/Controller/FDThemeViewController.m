@@ -6,67 +6,155 @@
 //
 
 #import "FDThemeViewController.h"
+#import "FDThemeListTableViewCell.h"
+#import "FDThemeModel.h"
+#import "FDThemeColorModel.h"
 
-@interface FDThemeViewController ()
-@property(nonatomic, strong) AAChartView *aaChartView;
+@interface FDThemeViewController ()<UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray <FDThemeModel *>*themeArray;
+
 @end
 
 @implementation FDThemeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"Theme";
-    [self conifgThemeUI];
-    
+    self.navigationItem.title = @"主题";
+    [self configItemUI];
+    [self loadColorData];
 }
 
--(void)conifgThemeUI{
-    CGFloat chartViewWidth  = self.view.frame.size.width;
-    CGFloat chartViewHeight = 100;
-    _aaChartView = [[AAChartView alloc] init];
-    _aaChartView.frame = CGRectMake(0, 60, chartViewWidth, chartViewHeight);
-    ////禁用 AAChartView 滚动效果(默认不禁用)
-    //self.aaChartView.scrollEnabled = NO;
-    ////设置图表视图的内容高度(默认 contentHeight 和 AAChartView 的高度相同)
-    //_aaChartView.contentHeight = chartViewHeight;
-    [self.view addSubview:_aaChartView];
-
-    
-    NSArray *stopsArr = @[
-        @[@0.00, @"#febc0f"],//颜色字符串设置支持十六进制类型和 rgba 类型
-        @[@0.25, @"#FF14d4"],
-        @[@0.50, @"#0bf8f5"],
-        @[@0.75, @"#F33c52"],
-    ];
-    
-    NSDictionary *gradientColorDic1 =
-    [AAGradientColor gradientColorWithDirection:AALinearGradientDirectionToRight
-                                     stopsArray:stopsArr];
-    
-    AAChartModel *aaChartModel= AAObject(AAChartModel)
-    
-    
-    .chartTypeSet(AAChartTypeSpline)
-//    .categoriesSet(@[
-//        @"一月", @"二月", @"三月", @"四月", @"五月", @"六月",
-//        @"七月", @"八月", @"九月", @"十月", @"十一月", @"十二月"
-//                   ])
-    .markerRadiusSet(@0)
-    .yAxisVisibleSet(false)
-    .xAxisVisibleSet(false)
-//    .yAxisLineWidthSet(@0)
-//    .yAxisGridLineStyleSet([AALineStyle styleWithWidth:@0])
-    .legendEnabledSet(false)
-    .seriesSet(@[
-        AASeriesElement.new
-        .nameSet(@"Tokyo Hot")
-        .lineWidthSet(@6)
-        .colorSet((id)gradientColorDic1)
-        .dataSet(@[@7.0, @10, @7.0, @10, @7.0, @10, @7.0, @10]),
-               ]);
-    /*图表视图对象调用图表模型对象,绘制最终图形*/
-    [_aaChartView aa_drawChartWithChartModel:aaChartModel];
+-(void)configItemUI{
+    UIBarButtonItem *left = [UIBarButtonItem itemWithImage:FDImage(@"theme_color_add")  highImage:FDImage(@"theme_color_add") target:self action:@selector(addThemeClick)];
+    self.navigationItem.leftBarButtonItem = left;
+    UIBarButtonItem *right = [UIBarButtonItem itemWithImage:FDImage(@"menu_right")  highImage:FDImage(@"menu_right") target:self action:@selector(menuClick)];
+    self.navigationItem.rightBarButtonItem = right;
+    [self.view addSubview:self.tableView];
 }
+
+
+-(void)addThemeClick{
+    DebugLog(@"增加主题+++");
+}
+
+-(void)menuClick{
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
+}
+
+
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.themeArray.count;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 107;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    FDThemeListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[FDThemeListTableViewCell className]];
+       if (!cell) {
+           cell = [[FDThemeListTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[FDThemeListTableViewCell className]];
+       }
+    FDThemeModel *themeModel = self.themeArray[indexPath.row];
+    cell.themeModel = themeModel;
+    return cell;
+}
+
+
+
+-(void)loadColorData{
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:0];
+    NSMutableArray *colorArray = [NSMutableArray arrayWithCapacity:1];
+    {
+        FDThemeModel *model = [FDThemeModel new];
+        model.name = @"Valentine";
+        model.hartType = AAChartTypeSpline;
+        
+        FDThemeColorModel *colorModel = [FDThemeColorModel new];
+        colorModel.x = 0.00;
+        colorModel.color = @"#febc0f";
+        [colorArray addObject:colorModel];
+        
+        FDThemeColorModel *colorModel1 = [FDThemeColorModel new];
+        colorModel1.x = 0.25;
+        colorModel1.color = @"#FF14d4";
+        [colorArray addObject:colorModel1];
+        
+        FDThemeColorModel *colorModel2 = [FDThemeColorModel new];
+        colorModel2.x = 0.5;
+        colorModel2.color = @"#0bf8f5";
+        [colorArray addObject:colorModel2];
+        
+        FDThemeColorModel *colorModel3 = [FDThemeColorModel new];
+        colorModel3.x = 0.75;
+        colorModel3.color = @"#F33c52";
+        [colorArray addObject:colorModel3];
+        
+        model.colorArray = colorArray;
+        [array addObject:model];
+    }
+    {
+        FDThemeModel *model = [FDThemeModel new];
+        model.name = @"Passion Heat";
+        model.hartType = AAChartTypeLine;
+        
+        FDThemeColorModel *colorModel = [FDThemeColorModel new];
+        colorModel.x = 0.00;
+        colorModel.color = @"#febc0f";
+        [colorArray addObject:colorModel];
+    
+        
+        FDThemeColorModel *colorModel1 = [FDThemeColorModel new];
+        colorModel1.x = 0.25;
+        colorModel1.color = @"#FF14d4";
+        [colorArray addObject:colorModel1];
+        
+        FDThemeColorModel *colorModel2 = [FDThemeColorModel new];
+        colorModel2.x = 0.5;
+        colorModel2.color = @"#0bf8f5";
+        [colorArray addObject:colorModel2];
+        
+        FDThemeColorModel *colorModel3 = [FDThemeColorModel new];
+        colorModel3.x = 0.75;
+        colorModel3.color = @"#F33c52";
+        [colorArray addObject:colorModel3];
+        
+        FDThemeColorModel *colorModel4 = [FDThemeColorModel new];
+        colorModel4.x = 1.00;
+        colorModel4.color = @"#1904dd";
+        [colorArray addObject:colorModel4];
+        
+        model.colorArray = colorArray;
+        [array addObject:model];
+    }
+    self.themeArray = array;
+}
+
+
+
+
+#pragma mark - lazy
+- (UITableView *)tableView{
+    if (!_tableView) {
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStylePlain];
+        _tableView.dataSource = self;
+        _tableView.delegate = self;
+        _tableView.backgroundColor = Color_162940;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        if (@available(iOS 11.0, *)) {
+            _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        } else {
+            self.automaticallyAdjustsScrollViewInsets = NO;
+        }
+        [_tableView registerReuseCellClass:[FDThemeListTableViewCell class]];
+    }
+    return _tableView;
+}
+
+
 
 
 @end

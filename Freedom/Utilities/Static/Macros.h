@@ -119,11 +119,12 @@
 #define Color_4D88E0    FDColor(0x4D88E0)
 #define Color_649CF0    FDColor(0x649CF0) //蓝色
 #define Color_333333    FDColor(0x333333)
+#define Color_666666    FDColor(0x666666)
 #define Color_999999    FDColor(0x999999)
 #define Color_EBEEF3    FDColor(0xEBEEF3)
 #define Color_F3F5F8    FDColor(0xF3F5F8)
 #define Color_F7F9FA    FDColor(0xF7F9FA)
-
+#define Color_162940    FDColor(0x162940)
 
 
 

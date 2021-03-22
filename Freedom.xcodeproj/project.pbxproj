@@ -49,6 +49,9 @@
 		6468781C25B8404C00C3DF73 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6468781625B8404C00C3DF73 /* UIImage+Extension.m */; };
 		6468781D25B8404C00C3DF73 /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 6468781725B8404C00C3DF73 /* UILabel+ChangeLineSpaceAndWordSpace.m */; };
 		6468782625B845C400C3DF73 /* NSObject+RadiuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6468782525B845C400C3DF73 /* NSObject+RadiuView.m */; };
+		6471170A26089B40005C0FEB /* FDThemeListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6471170926089B40005C0FEB /* FDThemeListTableViewCell.m */; };
+		647117102608A443005C0FEB /* FDThemeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6471170F2608A443005C0FEB /* FDThemeModel.m */; };
+		647117162608A49C005C0FEB /* FDThemeColorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 647117152608A49C005C0FEB /* FDThemeColorModel.m */; };
 		6479570925BBD02600E6DED4 /* FDSpeedShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6479570825BBD02600E6DED4 /* FDSpeedShowView.m */; };
 		B3BEA89C8D41BD6764FA3C07 /* Pods_FreedomTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F5CC6670371D39302BEA28 /* Pods_FreedomTests.framework */; };
 		CE52EC46BF1F3E7B5F85A125 /* Pods_Freedom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F776A692D51D3B922377EF /* Pods_Freedom.framework */; };
@@ -159,6 +162,12 @@
 		6468781925B8404C00C3DF73 /* UITableView+SJRegisterCellClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SJRegisterCellClass.h"; sourceTree = "<group>"; };
 		6468782425B845C400C3DF73 /* NSObject+RadiuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RadiuView.h"; sourceTree = "<group>"; };
 		6468782525B845C400C3DF73 /* NSObject+RadiuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RadiuView.m"; sourceTree = "<group>"; };
+		6471170826089B40005C0FEB /* FDThemeListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDThemeListTableViewCell.h; sourceTree = "<group>"; };
+		6471170926089B40005C0FEB /* FDThemeListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDThemeListTableViewCell.m; sourceTree = "<group>"; };
+		6471170E2608A443005C0FEB /* FDThemeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDThemeModel.h; sourceTree = "<group>"; };
+		6471170F2608A443005C0FEB /* FDThemeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDThemeModel.m; sourceTree = "<group>"; };
+		647117142608A49C005C0FEB /* FDThemeColorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDThemeColorModel.h; sourceTree = "<group>"; };
+		647117152608A49C005C0FEB /* FDThemeColorModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDThemeColorModel.m; sourceTree = "<group>"; };
 		6479570725BBD02600E6DED4 /* FDSpeedShowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDSpeedShowView.h; sourceTree = "<group>"; };
 		6479570825BBD02600E6DED4 /* FDSpeedShowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDSpeedShowView.m; sourceTree = "<group>"; };
 		71F5CC6670371D39302BEA28 /* Pods_FreedomTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreedomTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -447,6 +456,10 @@
 		6463871425B6D22800692B90 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6471170E2608A443005C0FEB /* FDThemeModel.h */,
+				6471170F2608A443005C0FEB /* FDThemeModel.m */,
+				647117142608A49C005C0FEB /* FDThemeColorModel.h */,
+				647117152608A49C005C0FEB /* FDThemeColorModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -454,6 +467,8 @@
 		6463871525B6D22800692B90 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6471170826089B40005C0FEB /* FDThemeListTableViewCell.h */,
+				6471170926089B40005C0FEB /* FDThemeListTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -820,11 +835,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6468780E25B83E7D00C3DF73 /* FDSpeedTopView.m in Sources */,
+				6471170A26089B40005C0FEB /* FDThemeListTableViewCell.m in Sources */,
 				643C2A1A25F371C300C09336 /* FDTextFiled.m in Sources */,
 				643C2A0C25F36F2C00C09336 /* FDColorPickerView.m in Sources */,
 				6463875725B6D8C500692B90 /* FDMusicViewController.m in Sources */,
 				643C29EB25F35FAB00C09336 /* UIImage+ColorSelect.m in Sources */,
 				6463875D25B6D8CF00692B90 /* FDSpeedViewController.m in Sources */,
+				647117162608A49C005C0FEB /* FDThemeColorModel.m in Sources */,
 				6437623925F6294200D3B7D4 /* FDColorCollectionViewCell.m in Sources */,
 				643C29F125F3601000C09336 /* FDAddColorViewController.m in Sources */,
 				643C29DF25F359EA00C09336 /* UIBarButtonItem+item.m in Sources */,
@@ -833,6 +850,7 @@
 				643C2A2B25F38FB200C09336 /* UIButton+TextImage.m in Sources */,
 				6463878425B6EE5900692B90 /* LCProgressHUD.m in Sources */,
 				646386B625B6C59400692B90 /* AppDelegate.m in Sources */,
+				647117102608A443005C0FEB /* FDThemeModel.m in Sources */,
 				6468782625B845C400C3DF73 /* NSObject+RadiuView.m in Sources */,
 				643C502A25F72D8A007AAC1F /* FDLightSlideView.m in Sources */,
 				646386C725B6C59600692B90 /* main.m in Sources */,
